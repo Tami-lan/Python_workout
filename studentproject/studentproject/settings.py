@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS=['https://*.gitpod.io']
+#CSRF_TRUSTED_ORIGINS=['https://*.gitpod.io']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'studentproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
