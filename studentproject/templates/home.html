@@ -35,7 +35,7 @@
                 <tr>
                     <!-- <th>{{st.id}}</th> -->
                      <th>{{forloop.counter}}</th>
-                    <td>{{st.Name}}</td>
+                    <td><a href="{% url 'student_detail' st.id %}">{{st.Name}}</a></td>
                     <td>{{st.Course_Name}}</td>
                     <td>{{st.Contact_No}}</td>
                 </tr>
