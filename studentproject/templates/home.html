@@ -25,34 +25,27 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Course_Name</th>
+                    <th scope="col">Contact_No</th>
                 </tr>
             </thead>
             <tbody>
+                {% for st in student %}
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <!-- <th>{{st.id}}</th> -->
+                     <th>{{forloop.counter}}</th>
+                    <td>{{st.Name}}</td>
+                    <td>{{st.Course_Name}}</td>
+                    <td>{{st.Contact_No}}</td>
                 </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>@social</td>
-                </tr>
+                {% endfor %}
+               
             </tbody>
         </table>
-        <img src="{% static '/images/image.png' %}" alt="django" width="400">
+        
     </div>
+ 
     
 
 </body>
