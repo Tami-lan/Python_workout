@@ -14,7 +14,10 @@ class Student(models.Model):
            return self.Name
 
 
-
+class course(models.Model):
+    maths=models.CharField(max_length=100)
+    Tamil=models.CharField(max_length=100)
+    English=models.CharField(max_length=150)
 
 
 
