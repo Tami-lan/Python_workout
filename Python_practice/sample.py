@@ -1,1 +1,1 @@
-print("gows")
+print("ram")
